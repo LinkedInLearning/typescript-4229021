@@ -4,7 +4,9 @@
     // Additional Extensions Here
   ],
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "postAttachCommand": "git pull --all"
+  "postAttachCommand": "git pull --all",
+  "features": {
+    "ghcr.io/devcontainers-community/npm-features/typescript:1": {}
   
   // Update welcome text and set terminal prompt to '$ '
 }

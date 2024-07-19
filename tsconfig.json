@@ -5,5 +5,7 @@
     "compilerOptions": {
         "outDir": "dist",
         "target": "ESNext",
+        "noEmitOnError": true,
+        "noEmit": true
     }
 }

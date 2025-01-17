@@ -1,11 +1,8 @@
-// Le type array
+// Le type tuple
 
-let listeA: number[] = [1, 2, 3]
-let listeB: Array<number> = [4, 5, 6]
+let x: [string, number]
 
-let listeC: string[] = ["a", "b", "c"]
-let listeD: Array<string> = ["d", "e", "f"]
+x = ["hello", 10]
 
-let listeE: (string | number)[] = ["Pomme", 2, "Orange", 3, 4, "Banane"]
-let listeF: Array<string | number> = ["Pomme", 2, "Orange", 3, 4, "Banane"]
-
+x = [10, "hello"] // erreur
+x[2] // erreur

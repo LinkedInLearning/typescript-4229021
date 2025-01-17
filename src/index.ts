@@ -1,15 +1,13 @@
-// Le type never
+// Typage par inférence
 
-function maFonctionA(errorMsg): never {
-    throw new Error(errorMsg);
-}
+let a = "du texte";
+let b = 123;
+a = b;
 
-function maFonctionB(x: string | number) {
-    if (typeof x === "string") {
-        // fait quelque chose
-    } else if (typeof x === "number") {
-        // faire quelque chose d'autre
-    } else {
-        x; // possède le type 'never'!
-    }
-}
+let arr1 = [];
+let arr2 = [10, null, 30, 40];
+let arr3 = [0, 1, "test"];
+
+let fct1 = () => { }
+let fct2 = () => { return "Bonjour"; }
+

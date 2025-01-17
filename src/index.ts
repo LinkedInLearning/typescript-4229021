@@ -1,13 +1,28 @@
-// Typage par inférence
+// Annotation de type dans TypeScript
 
-let a = "du texte";
-let b = 123;
-a = b;
+let a: string = "du texte";
+let b: number = 123;
+let c: boolean = true;
+let d: boolean = false;
 
-let arr1 = [];
-let arr2 = [10, null, 30, 40];
-let arr3 = [0, 1, "test"];
+let arr1: any[] = [];
+let arr2: number[] = [10, 30, 40];
 
-let fct1 = () => { }
-let fct2 = () => { return "Bonjour"; }
+function maFonctionA(): void {
+}
 
+// Annotation de type de paramètre
+function maFonctionB(id: number, name: string) {
+    console.log("Id = " + id + ", Name = " + name);
+}
+
+// Annotation de type dans un objet
+let employee: {
+    id: number;
+    name: string;
+};
+
+employee = {
+    id: 100,
+    name: "John"
+}

@@ -1,8 +1,12 @@
-// Le type tuple
+// Le type void
 
-let x: [string, number]
+function maFonctionA(): void {
+}
 
-x = ["hello", 10]
+function maFonctionB(): void {
+    return; // retourne undefined
+}
 
-x = [10, "hello"] // erreur
-x[2] // erreur
+function maFonctionC(): void {
+    return 7; // erreur
+}

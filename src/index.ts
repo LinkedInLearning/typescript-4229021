@@ -1,28 +1,8 @@
-// Annotation de type dans TypeScript
+// Typage par assertion
 
-let a: string = "du texte";
-let b: number = 123;
-let c: boolean = true;
-let d: boolean = false;
+let code: any = 123;
+// let employeeCode = <number> code;
+let employeeCode = code as number;
+typeof (employeeCode);
 
-let arr1: any[] = [];
-let arr2: number[] = [10, 30, 40];
-
-function maFonctionA(): void {
-}
-
-// Annotation de type de paramètre
-function maFonctionB(id: number, name: string) {
-    console.log("Id = " + id + ", Name = " + name);
-}
-
-// Annotation de type dans un objet
-let employee: {
-    id: number;
-    name: string;
-};
-
-employee = {
-    id: 100,
-    name: "John"
-}
+let x = "bonjour" as number;

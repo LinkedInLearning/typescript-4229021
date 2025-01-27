@@ -1,7 +1,9 @@
-// L'opérateur typeof
+// Les types d'accès indexés
 
-let s = "hello";
-let n: typeof s;
+type Person = { age: number; name: string; alive: boolean };
+type Age = Person["age"];
 
-let numberArray = [1, 2, 3]
-type ArrayType = typeof numberArray
+type AgeName = Person["age" | "name"];
+
+type key = "age";
+type T = Person[key]

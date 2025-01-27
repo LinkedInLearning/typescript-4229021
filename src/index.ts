@@ -1,8 +1,28 @@
-// Typage par assertion
+// Le typage et chaînage optionnels
 
-let code: any = 123;
-// let employeeCode = <number> code;
-let employeeCode = code as number;
-typeof (employeeCode);
+function calcul(a: number, b: number, c?: number) {
+    return a + b + (c ?? 0);
+}
 
-let x = "bonjour" as number;
+console.log(calcul(2, 3))
+console.log(calcul(2, 3, 4))
+
+
+interface Pet {
+    owner: string
+    cat: {
+        name: string
+    }
+    dog?: {
+        name: string
+    }
+}
+
+let petA: Pet = {
+    owner: 'Alice',
+    cat: {
+        name: 'Dinah',
+    },
+};
+
+const dogName = petA.dog?.name;

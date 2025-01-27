@@ -1,7 +1,7 @@
-// Les classes
+// Les classes et la visibilité des membres
 
 class Animal {
-    name: string;
+    private readonly name: string; // public, protected
     age: number;
 
     constructor(name, age) {
@@ -13,14 +13,13 @@ class Animal {
     }
 }
 
-let pet = new Animal("Rex", 5)
-
 class Dog extends Animal {
     makeSound() {
         alert(this.name + "aboie !")
     }
 }
 
-let pet2 = new Dog("Simba", 12)
-pet2.move();
-pet2.makeSound();
+let pet = new Dog("Simba", 12)
+pet.name = "Meddor"
+pet.move();
+pet.makeSound();

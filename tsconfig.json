@@ -4,9 +4,10 @@
     ],
     "compilerOptions": {
         "outDir": "dist",
-        //"target": "ESNext",
         "target": "ES2022",
         "noEmitOnError": true,
-        "noEmit": false
+        "noEmit": false,
+        "outFile": "dist/index.js",
+        "module": "System"
     }
 }

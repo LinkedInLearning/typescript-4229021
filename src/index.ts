@@ -1,28 +1,24 @@
-// Le typage et chaînage optionnels
+// Les unions
 
-function calcul(a: number, b: number, c?: number) {
-    return a + b + (c ?? 0);
+let a: (string | number);
+a = "ABC";
+a = 123;
+a = true;
+
+let b: string | number | boolean;
+b = 111;
+b = "E111";
+b = true;
+
+
+function displayType(x: string | number) {
+    if (typeof (x) === "number") {
+        console.log('X est de type number')
+    } else if (typeof (x) === "string") {
+        console.log('X est de type string')
+    }
 }
 
-console.log(calcul(2, 3))
-console.log(calcul(2, 3, 4))
-
-
-interface Pet {
-    owner: string
-    cat: {
-        name: string
-    }
-    dog?: {
-        name: string
-    }
-}
-
-let petA: Pet = {
-    owner: 'Alice',
-    cat: {
-        name: 'Dinah',
-    },
-};
-
-const dogName = petA.dog?.name;
+displayType(123);
+displayType("ABC");
+displayType(true); // ERREUR

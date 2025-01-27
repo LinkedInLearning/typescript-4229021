@@ -8,6 +8,7 @@
         "noEmitOnError": true,
         "noEmit": false,
         //"outFile": "dist/index.js",
-        "module": "CommonJS"
+        "module": "CommonJS",
+        "allowJs": true
     }
 }

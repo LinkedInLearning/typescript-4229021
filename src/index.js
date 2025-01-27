@@ -1,7 +1,7 @@
 class Rectangle {
     constructor(hauteur, largeur) {
         this.hauteur = hauteur
-        this.largeur = largeur
+        this.largueur = largeur
     }
 
     get area() {
@@ -9,7 +9,7 @@ class Rectangle {
     }
 
     calcArea() {
-        return this.largeur * this.hauteur
+        return this.largueur * this.hauteur
     }
 }
 

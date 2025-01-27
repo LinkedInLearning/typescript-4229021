@@ -7,4 +7,4 @@ function addition({ x, y }: Somme) {
     return x + y
 }
 
-// tsc src/types.ts --declaration
+// tsc src/globals.ts --declaration

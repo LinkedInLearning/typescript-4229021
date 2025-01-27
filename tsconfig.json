@@ -4,8 +4,9 @@
     ],
     "compilerOptions": {
         "outDir": "dist",
-        "target": "ESNext",
+        //"target": "ESNext",
+        "target": "ES2022",
         "noEmitOnError": true,
-        "noEmit": true
+        "noEmit": false
     }
 }

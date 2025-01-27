@@ -1,19 +1,7 @@
-// Les enums
+// Le typage générique
 
-interface Contact {
-    id: number;
-    name: string;
-    status: ContactStatus
+function identity<T1, T2>(arg: T1, arg2: T2): T1 {
+    return arg;
 }
 
-enum ContactStatus {
-    Active = "active",
-    Inactive = "inactive",
-    Buzy = "occupe"
-}
-
-const contact1: Contact = {
-    id: 1,
-    name: "Tony",
-    status: ContactStatus.Active // Active, Inactive, Buzy
-}
+let outputS = identity<string, number>("myString", 5);

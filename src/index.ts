@@ -1,24 +1,28 @@
-type Task = {
-    name: string,
-    level: 'facile' | 'moyen' | 'difficile'
-}
-
 class Manager {
-    @addEasyTask
-    task: Task[] = []
-}
-
-const manager = new Manager()
-console.log(manager)
-
-function addEasyTask<T, V extends Task[]>(target: undefined, context: ClassFieldDecoratorContext<T, V>) {
-    return function (args: V) {
-        args.push({
-            name: 'nouvelle tâche',
-            level: 'facile'
-        })
-        return args;
+    budget: number = 900
+    @withCostEstimation(1000)
+    startProject() {
+        console.log('Projet accepté')
     }
 }
 
+const project = new Manager();
+project.startProject();
 
+function withCostEstimation(costEstimate: number) {
+    return function <T extends { budget: number }>(target: Function, context: ClassMethodDecoratorContext<T>) {
+        return function (...args: any) {
+            const instance = this as T
+
+            if (instance.budget > costEstimate) {
+                instance.budget = instance.budget - costEstimate
+                target.apply(instance, args)
+                console.log("Budget restant estimé à : " + instance.budget)
+            } else {
+                console.log("Le budget de " + instance.budget + " est insuffisant pour ce projet")
+            }
+
+            return target
+        }
+    }
+}

@@ -1,25 +1,22 @@
-// Les classes et la visibilité des membres
+// Les classes abstraites
 
-class Animal {
-    private readonly name: string; // public, protected
-    age: number;
-
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    move() {
-        alert(this.name + " se déplace");
+abstract class Person {
+    abstract getName(): string;
+    sayHello() {
+        console.log("Hello" + this.getName());
     }
 }
 
-class Dog extends Animal {
-    makeSound() {
-        alert(this.name + "aboie !")
+const a = new Person();
+
+class Employee extends Person {
+    getName(): string {
+        return "Tony";
     }
+
 }
 
-let pet = new Dog("Simba", 12)
-pet.name = "Meddor"
-pet.move();
-pet.makeSound();
+const b = new Employee();
+b.getName();
+b.sayHello();
+

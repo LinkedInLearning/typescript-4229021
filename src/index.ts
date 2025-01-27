@@ -1,2 +1,3 @@
-
-addition({ x: 3, y: 8 })
+$(function () {
+    console.log("Hello World !")
+})

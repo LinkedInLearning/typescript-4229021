@@ -1,22 +1,17 @@
-// Les classes abstraites
+// Les interfaces
 
-abstract class Person {
-    abstract getName(): string;
-    sayHello() {
-        console.log("Hello" + this.getName());
-    }
+interface Person {
+    id: number;
+    name: string;
+    phone?: string
 }
 
-const a = new Person();
+let personA: Person = { id: 1, name: "Tony", phone: "0123456789" };
 
-class Employee extends Person {
-    getName(): string {
-        return "Tony";
-    }
-
+class Friend implements Person {
+    id;
+    name;
+    surname;
 }
 
-const b = new Employee();
-b.getName();
-b.sayHello();
-
+const personB = new Friend()

@@ -1,17 +1,15 @@
-// Les interfaces
+// Alias de type
 
-interface Person {
-    id: number;
-    name: string;
-    phone?: string
-}
+type ID = number;
 
-let personA: Person = { id: 1, name: "Tony", phone: "0123456789" };
+const userID: ID = 2
 
-class Friend implements Person {
-    id;
-    name;
-    surname;
-}
+type Point = {
+    x: number;
+    y: number;
+};
 
-const personB = new Friend()
+const element: Point = {
+    x: 9,
+    y: 9
+};

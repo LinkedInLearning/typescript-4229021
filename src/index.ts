@@ -1,32 +1,19 @@
-// Les mixins
+// Les enums
 
-type Constructor<T = {}> = new (...args: any[]) => T;
-
-function ClassA<TBase extends Constructor>(Base: TBase) {
-    return class extends Base {
-        proprieteClassA: string = "ici la proprieteClassA"
-    };
+interface Contact {
+    id: number;
+    name: string;
+    status: ContactStatus
 }
 
-function ClassB<TBase extends Constructor>(Base: TBase) {
-    return class extends Base {
-        proprieteClassB: string = "ici la proprieteClassB"
-    };
+enum ContactStatus {
+    Active = "active",
+    Inactive = "inactive",
+    Buzy = "occupe"
 }
 
-
-class User {
-    name = 'Merlin';
+const contact1: Contact = {
+    id: 1,
+    name: "Tony",
+    status: ContactStatus.Active // Active, Inactive, Buzy
 }
-
-// Héritage simple
-const mixin1 = ClassA(User);
-let demoMixin1 = new mixin1()
-demoMixin1.proprieteClassA
-
-
-// Héritage multiple
-const mixin2 = ClassA(ClassB(User));
-let demoMixin2 = new mixin2()
-demoMixin2.proprieteClassA
-demoMixin2.proprieteClassB

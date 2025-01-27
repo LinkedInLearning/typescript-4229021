@@ -1,27 +1,26 @@
-// Typage de fonctions
+// Les classes
 
-function calculA(x, y) {
-    return x + y;
+class Animal {
+    name: string;
+    age: number;
+
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    move() {
+        alert(this.name + " se déplace");
+    }
 }
-calculA(2, 3);
 
+let pet = new Animal("Rex", 5)
 
-
-function calculB(x, y?) {
-    return x + y;
+class Dog extends Animal {
+    makeSound() {
+        alert(this.name + "aboie !")
+    }
 }
-calculB(2);
 
-
-
-function calculC(x, y = 1) {
-    return x + y;
-}
-calculC(2, 3);
-
-
-
-function calculD(x: string, y: number): string {
-    return x + y;
-}
-calculD("abc", 3);
+let pet2 = new Dog("Simba", 12)
+pet2.move();
+pet2.makeSound();

@@ -1,15 +1,16 @@
-// Alias de type
+// Intersection
 
-type ID = number;
+type Colorful = {
+    color: string;
+}
 
-const userID: ID = 2
+type Circle = {
+    radius: number;
+}
 
-type Point = {
-    x: number;
-    y: number;
-};
+type ColorfulCircle = Colorful & Circle;
 
-const element: Point = {
-    x: 9,
-    y: 9
-};
+const circleA: ColorfulCircle = {
+    color: "blue",
+    radius: 12
+}

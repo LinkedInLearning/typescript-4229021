@@ -27,9 +27,9 @@ La branche master correspond au code à la fin de la formation.
 3. [Instructions spécifiques au cours] 
 
 
-### Formateur
+### Formatrice
 
-**Nom du formateur** 
+**Maheva Dessart** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 

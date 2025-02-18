@@ -1,12 +1,12 @@
-# Nom final de la formation
+# L'essentiel de TypeScript
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L'essentiel de TypeScript`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
 Ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. Consultez la vidéo "Utilisation de Codespaces GitHub dans le cadre de ce cours" pour savoir comment démarrer.  
 
-DESCRIPTION DE LA FORMATION
+Maheva Dessart, développeuse et formatrice, vous invite à découvrir TypeScript, un outil désormais incontournable pour la programmation moderne. Dans cette formation, vous vous initierez aux bases de TypeScript, explorerez les différents types de base et apprendrez à les manipuler efficacement. Vous découvrirez, entre autres, comment utiliser les fonctions, les interfaces et les alias pour structurer votre code de manière plus robuste et optimisée. Rejoignez cette formation pour maîtriser TypeScript et améliorer vos projets de développement.
 
 ## Instructions
 
@@ -27,15 +27,15 @@ La branche master correspond au code à la fin de la formation.
 3. [Instructions spécifiques au cours] 
 
 
-### Formateur
+### Formatrice
 
-**Nom du formateur** 
+**Maheva Dessart** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-typescript/bienvenue-dans-l-essentiel-de-typescript
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQHu6doyyvEPJg/learning-public-crop_675_1200/B4EZUYndZVHUAY-/0/1739874752744?e=2147483647&v=beta&t=Pw5aeU6Wumv0u53u5KOCDW8UG_zzmlgbz1fYvaubFZI
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
 
 [1]: # (End of FR-Instruction ###############################################################################################)

@@ -34,7 +34,7 @@ La branche master correspond au code à la fin de la formation.
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
+[lil-course-url]: https://www.linkedin.com/learning/l-essentiel-de-typescript/bienvenue-dans-l-essentiel-de-typescript
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQHu6doyyvEPJg/learning-public-crop_675_1200/B4EZUYndZVHUAY-/0/1739874752744?e=2147483647&v=beta&t=Pw5aeU6Wumv0u53u5KOCDW8UG_zzmlgbz1fYvaubFZI
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/maheva-dessart
 
